@@ -18,6 +18,8 @@ defmodule LiveViewFormExampleWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+
+    live "/form", FormLive
   end
 
   # Other scopes may use custom stacks.
